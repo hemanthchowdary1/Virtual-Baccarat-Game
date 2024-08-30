@@ -1,0 +1,3 @@
+C:/Users/heman/CLionProjects/casino number game/cmake-build-debug/CMakeFiles/casino_number_game.dir
+C:/Users/heman/CLionProjects/casino number game/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/heman/CLionProjects/casino number game/cmake-build-debug/CMakeFiles/rebuild_cache.dir
