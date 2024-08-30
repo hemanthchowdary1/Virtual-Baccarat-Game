@@ -39,7 +39,7 @@ int main() {
     cout << "=================================" << endl;
 
     do { // Main do-while loop
-        cout << "Current balance, PHP " << money << endl;
+        cout << "Current balance, INR " << money << endl;
         cout << "1-BANKER \n2-PLAYER \n";
         cout << "Choose your bet: ";
 
@@ -52,13 +52,13 @@ int main() {
 
         // Validate bet amount
         do {
-            cout << "Place your bet, PHP: ";
+            cout << "Place your bet, INR: ";
             cin >> bet;
         } while (bet > money || bet <= 0);
 
         // BANKER CARDS
         cout << "\n==============================\n";
-        cout << "      = BANKER'S CARD =\n";
+        cout << "      - BANKER'S CARD -\n";
         cout << "==============================\n";
 
         Number banker;
@@ -76,7 +76,7 @@ int main() {
 
         // PLAYER CARDS
         cout << "\n==============================\n";
-        cout << "      = PLAYER'S CARD =\n";
+        cout << "      - PLAYER'S CARD -\n";
         cout << "==============================\n";
 
         Number player;
@@ -95,9 +95,9 @@ int main() {
         // Determine and declare winner
         winner = winnerFunction(banker.sum, player.sum);
         prize = declareWinner(winner, decision, bet);
-        cout << "PHP " << prize << endl;
+        cout << "INR " << prize << endl;
         money += prize;
-        cout << "Current Money, PHP " << money << "\n\n";
+        cout << "Current Money, INR " << money << "\n\n";
 
         // Ask if the user wants to play again
         cout << "PLAY AGAIN? Y/N ";
@@ -110,22 +110,22 @@ int main() {
 }
 
 void printCard1(int num1, int num2, int num3, int sum) {
-    cout << "=======\n";
+    cout << "-------\n";
     cout << "|     |\n";
     cout << "|  " << sum << "  |\n";
     cout << "|     |\n";
-    cout << "=======\n";
+    cout << "-------\n";
     cout << "First Card: " << num1 << "\n";
     cout << "Second Card: " << num2 << "\n";
     cout << "Extra Card: " << num3 << "\n";
 }
 
 void printCard2(int num1, int num2, int sum) {
-    cout << "=======\n";
+    cout << "-------\n";
     cout << "|     |\n";
     cout << "|  " << sum << "  |\n";
     cout << "|     |\n";
-    cout << "=======\n";
+    cout << "-------\n";
     cout << "This is a natural win 8/9\n";
     cout << "First Card: " << num1 << "\n";
     cout << "Second Card: " << num2 << "\n";
