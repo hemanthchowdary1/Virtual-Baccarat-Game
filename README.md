@@ -1,11 +1,11 @@
-Features
+# Features
 Initial balance management
 Card drawing and calculation
 Betting on Banker or Player
 Win/Loss determination and balance updates
 Option to play again
 
-Gameplay
+# Gameplay
 Enter your name to start.
 Choose to bet on Banker or Player.
 Place a bet.
